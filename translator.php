@@ -33,7 +33,7 @@ class Translator {
 
     public function translate($text, $args = array()) {
         $lang = $this->_language->get_default_language();
-        if (in_array($this->_language->get_current_language())) {
+        if (in_array($this->_language->get_current_language(),$this->_language->get_allowed_languages())) {
             $lang = $this->_language->get_current_language();
         }
         $filename = $this->_config->get_translation_directory() . '/' . $lang . '.php';
