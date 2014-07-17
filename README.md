@@ -1,6 +1,6 @@
 easy-translate
 ==============
- > Les README.md, c'est pas pour les Dahus.
+ > *Les README.md, c'est pas pour les Dahus.*
  > Julien Rosa
 
 Thank you Julien to point the fact that I didn't write my readme file. So now on, i'll write it.
