@@ -1,9 +1,9 @@
 <?php
 
-class Err_not_found_404 extends Exception {
-    
-}
-
+/**
+ * @author decima
+ * Router class
+ */
 class Router {
 
     const FIXED_VAL = "fix";
@@ -11,10 +11,9 @@ class Router {
     const TYPE_FILE = "file";
     const TYPE_FUNCTION = "function";
     const TYPE_UNKNOWN = "unknown";
-    
+
     private $callers = array(Self::FIXED_VAL => array(), Self::VAR_VAL => array());
 
-    
     public function assign($path, $fnct) {
         $ftype = self::TYPE_UNKNOWN;
         if (is_callable($fnct)) {
@@ -98,3 +97,5 @@ class Router {
     }
 
 }
+
+class Err_not_found_404 extends Exception {}
